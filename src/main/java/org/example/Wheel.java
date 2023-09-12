@@ -55,7 +55,7 @@ public class Wheel extends Part {
     }
     public Wheel createWheelValina() {
         Wheel wheel = new Wheel();
-        wheel.setName("Valina(");
+        wheel.setName("Valina");
         wheel.setSize(18);
         wheel.setFriction(3);
         wheel.setCost(250_000);

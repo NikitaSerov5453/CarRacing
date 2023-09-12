@@ -75,7 +75,7 @@ public class CreateCar extends Car{
 
     public int carPower() {
         int carPower;
-        return carPower = ((100 - car.transmission.getDeterioration()) * car.engine.getPower() * car.wheel.getFriction()) * (car.body.getMass());
+        return carPower = ((100 - car.transmission.getDeterioration()) * car.engine.getPower() * car.wheel.getFriction()) - (car.body.getMass());
     }
 
     @Override
