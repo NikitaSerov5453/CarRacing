@@ -7,7 +7,6 @@ public class Engine extends Part {
     }
 
     private int power;
-    private String name;
 
     public int getPower() {
         return power;
@@ -27,8 +26,32 @@ public class Engine extends Part {
         this.name = name;
     }
 
+    public Engine createEngine2JZ() {
+        Engine engine = new Engine();
+        engine.setName("2jz gte");
+        engine.setPower(400);
+        engine.setCost(600_000);
+        return engine;
+    }
+
+    public Engine createEngineVR38DET() {
+        Engine engine = new Engine();
+        engine.setName("VR38DET");
+        engine.setPower(600);
+        engine.setCost(3_000_000);
+        return engine;
+    }
+
+    public Engine createEngine3110() {
+        Engine engine = new Engine();
+        engine.setName("3110");
+        engine.setPower(100);
+        engine.setCost(20_000);
+        return engine;
+    }
+
     @Override
     public String toString() {
-        return "Engine{" + "power=" + getPower() + ", name='" + getName() + '\'' + '}' + '\n';
+        return "Engine{" + "name='" + getName() + ", power=" + getPower() + '\'' + '}' + '\n';
     }
 }

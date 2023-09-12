@@ -7,7 +7,7 @@ abstract public class Part {
     }
 
     private int cost;
-    private String name;
+    protected String name;
 
     public int getCost() {
         return cost;

@@ -1,15 +1,15 @@
 package org.example;
 
 public class Wheel extends Part {
+    private int size;
+    private int friction;
+
     public Wheel() {
         name = "ahiles";
         size = 14;
         friction = 1;
     }
 
-    private String name;
-    private int size;
-    private int friction;
 
     @Override
     public String getName() {
@@ -37,6 +37,30 @@ public class Wheel extends Part {
         this.friction = friction;
     }
 
+    public Wheel createWheelAhiles() {
+        Wheel wheel = new Wheel();
+        wheel.setName("Ahiles");
+        wheel.setSize(14);
+        wheel.setFriction(1);
+        wheel.setCost(80_000);
+        return wheel;
+    }
+    public Wheel createWheelWestlake() {
+        Wheel wheel = new Wheel();
+        wheel.setName("Westlake");
+        wheel.setSize(18);
+        wheel.setFriction(2);
+        wheel.setCost(120_000);
+        return wheel;
+    }
+    public Wheel createWheelValina() {
+        Wheel wheel = new Wheel();
+        wheel.setName("Valina(");
+        wheel.setSize(18);
+        wheel.setFriction(3);
+        wheel.setCost(250_000);
+        return wheel;
+    }
     @Override
     public String toString() {
         return "Wheel{" +
